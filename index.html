@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey's</title>
+    <!-- tailwind & daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- tailwind custom classes -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <!--custom styles-->
+    <style>
+        .font-monrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-monrope">
+    <header class="md:container md:mx-auto ">
+    <!-- navbar -->
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Item 1</a></li>
+              <li>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">Hockey's</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Item 1</a></li>
+            <li>
+              <details>
+                <summary>Parent</summary>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn">Button</a>
+        </div>
+      </div>
+     <section>
+        <!-- slider section -->
+        <div class="carousel w-full lg:h-[550px]">
+            <!-- slide 01 -->
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <!-- slide 02 --> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="Images/slide02.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+          </div>
+     </section>   
+    </header>
+    <main class="md:container md:mx-auto">
+        <section class="my-28">
+            <hr class="pb-8">
+            <h3 class="text-3xl font-bold text-center">Professional Hockeys Club</h3>
+            <p class="text-center pt-6 pb-6">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            <hr class="pb-12">
+            <div class="flex flex-col md:flex-row lg:flex-row gap-8">
+                <div>
+                    <div class="radial-progress" style="--value:87;color: #FF4240;" role="progressbar">87%</div>
+                    
+                        <h5 class="text-m font-semibold py-6">Prayer Facility</h5>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    
+                </div>
+                <div>
+                    <div class="radial-progress" style="--value:95;color: #49D293;" role="progressbar">95%</div>
+                    <h5 class="text-m font-semibold py-6">Experienced Coach </h5>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div>
+                    <div class="radial-progress" style="--value:90;color: #FFB546;" role="progressbar">90%</div>
+                    <h5 class="text-m font-semibold py-6">Senior Player</h5>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div>
+                    <div class="radial-progress" style="--value:80;color: #4C8DF1;" role="progressbar">80%</div>
+                    <h5 class="text-m font-semibold py-6">Training Ground</h5>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
